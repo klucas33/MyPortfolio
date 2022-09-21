@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  background-color: var(--mainColor);
+  border: 3px solid black;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-family: "CookieRun-Regular";
+  font-size: 30px;
+  transition: linear 0.5s;
+  border-radius: 10%;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: -6px -6px 0 -2px #e245, 6px 6px 0 -2px #e245;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+button:active {
+  box-shadow: -6px -6px 0 -2px #267, 6px 6px 0 -2px #267;
+}
+
+:root {
+  --mainColor: white;
+}
